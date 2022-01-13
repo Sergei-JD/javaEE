@@ -1,6 +1,7 @@
-package com.javaee.example;
+package com.javaee.example.additionally;
 
 public class Cart {
+
     private String name;
     private int quantity;
 

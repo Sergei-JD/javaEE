@@ -1,4 +1,4 @@
-package com.javaee.example;
+package com.javaee.example.additionally;
 
 public class TestClass {
     public String getInfo() {

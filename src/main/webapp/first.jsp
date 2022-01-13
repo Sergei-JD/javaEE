@@ -13,7 +13,7 @@
 <body>
     <h1>First JSP</h1>
     <p>
-        <%@ page import="com.javaee.example.TestClass" %>
+        <%@ page import="com.javaee.example.additionally.TestClass" %>
         <%
             TestClass testClass = new TestClass();
         %>

@@ -1,4 +1,4 @@
-package com.javaee.example.servlets;
+package com.javaee.example.servlets.session;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -10,8 +10,8 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "SessionServletCount", value = "/SessionServletCount")
-public class SessionServletCount extends HttpServlet {
+@WebServlet(name = "SessionCountServlet", value = "/SessionCountServlet")
+public class SessionCountServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();

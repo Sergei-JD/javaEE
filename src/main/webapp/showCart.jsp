@@ -1,4 +1,4 @@
-<%@ page import="com.javaee.example.Cart" %><%--
+<%@ page import="com.javaee.example.additionally.Cart" %><%--
   Created by IntelliJ IDEA.
   User: Sergei
   Date: 13.01.2022
