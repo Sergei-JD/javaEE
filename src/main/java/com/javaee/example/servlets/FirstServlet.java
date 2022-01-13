@@ -1,4 +1,4 @@
-package com.javaee.example;
+package com.javaee.example.servlets;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;

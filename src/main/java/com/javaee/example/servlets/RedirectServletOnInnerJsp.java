@@ -1,4 +1,4 @@
-package com.javaee.example;
+package com.javaee.example.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -9,8 +9,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "RedirectServletOnGoogle", value = "/RedirectServletOnGoogle")
-public class RedirectServletOnGoogle extends HttpServlet {
+@WebServlet(name = "RedirectServletOnInnerJsp", value = "/RedirectServletOnInnerJsp")
+public class RedirectServletOnInnerJsp extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -28,7 +28,7 @@ public class RedirectServletOnGoogle extends HttpServlet {
         (not internal) resource with a URL change
 */
 
-        response.sendRedirect("https://www.google.com");
+        response.sendRedirect("/second.jsp");
     }
 
 }

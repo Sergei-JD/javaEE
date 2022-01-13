@@ -1,6 +1,5 @@
-package com.javaee.example;
+package com.javaee.example.servlets;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -10,8 +9,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "ForwardServlet", value = "/ForwardServlet")
-public class ForwardServlet extends HttpServlet {
+@WebServlet(name = "RedirectServletOnGoogle", value = "/RedirectServletOnGoogle")
+public class RedirectServletOnGoogle extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -25,12 +24,11 @@ public class ForwardServlet extends HttpServlet {
 
 /*
         the user will not see everything above, but you can perform useful logic,
-        for example, saving the user. the user will be redirected to another (internal)
-        resource without changing the URL
+        for example, saving the user. the user will be redirected to another
+        (not internal) resource with a URL change
 */
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/second.jsp");
-        dispatcher.forward(request, response);
+        response.sendRedirect("https://www.google.com");
     }
 
 }
