@@ -17,5 +17,11 @@
 *.tar.gz
 *.rar
 
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
 # Project exclude paths
 /target/
